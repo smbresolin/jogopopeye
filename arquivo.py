@@ -1,0 +1,11 @@
+def registroDoJogo():
+    file = open("registroDoJogo.txt","w")
+    file = open("registroDoJogo.txt","r")
+    dados = file.readlines()
+    file.close()
+    file = open("registroDoJogo.txt","w")
+    nome = input("Digite aqui o seu nome: ")
+    email = input("Digite aqui o seu e-mail: ")
+    file.write(nome+"\n"+email)
+    file.close()
+    print("Registro feito com sucesso!")
